@@ -30,7 +30,6 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,7 +44,6 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
@@ -57,15 +55,6 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese Datos";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(198, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 26);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Coloca un numero\r\n      entre 1-7";
             // 
             // button3
             // 
@@ -103,6 +92,7 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
             this.txt_numero.Name = "txt_numero";
             this.txt_numero.Size = new System.Drawing.Size(100, 20);
             this.txt_numero.TabIndex = 1;
+            this.txt_numero.TextChanged += new System.EventHandler(this.txt_numero_TextChanged);
             // 
             // label1
             // 
@@ -130,6 +120,7 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
             this.txt_dia.Name = "txt_dia";
             this.txt_dia.Size = new System.Drawing.Size(100, 20);
             this.txt_dia.TabIndex = 5;
+            this.txt_dia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -168,7 +159,6 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_dia;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }
 
