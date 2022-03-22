@@ -202,7 +202,7 @@ namespace TP2_Figuras_Geometricas_Juarez_Enzo
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TP2_Figuras Geometricas";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

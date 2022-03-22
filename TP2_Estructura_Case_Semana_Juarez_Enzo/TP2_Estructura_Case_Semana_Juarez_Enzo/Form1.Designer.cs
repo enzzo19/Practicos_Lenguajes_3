@@ -29,6 +29,7 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_dia = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -92,7 +94,7 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
             this.txt_numero.Name = "txt_numero";
             this.txt_numero.Size = new System.Drawing.Size(100, 20);
             this.txt_numero.TabIndex = 1;
-            this.txt_numero.TextChanged += new System.EventHandler(this.txt_numero_TextChanged);
+            this.toolTip1.SetToolTip(this.txt_numero, "Coloque un numero entre1-7");
             // 
             // label1
             // 
@@ -159,6 +161,7 @@ namespace TP2_Estructura_Case_Semana_Juarez_Enzo
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_dia;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

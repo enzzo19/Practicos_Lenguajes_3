@@ -35,6 +35,8 @@ namespace TP2_Figuras_Geometricas_Juarez_Enzo
 
         private void btn_calcular_Click(object sender, EventArgs e)
         {
+            pnl_cuadrado.Visible = false;
+            pnl_rectangulo.Visible = false;
             double area = 0.0;
             double perimetro = 0.0;
             double lado_A = Convert.ToDouble(txt_ladoA.Text);
