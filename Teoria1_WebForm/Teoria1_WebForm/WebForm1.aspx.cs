@@ -29,7 +29,7 @@ namespace Teoria1_WebForm
         protected void Button1_Click(object sender, EventArgs e)
         {
             string message = "";
-            message += txt_destino.Text + "\n" + txt_itinerario.Text + "\n" + txt_hotel.Text + "\n";
+            message += txt_destino.Text + "<BR>" + txt_itinerario.Text + "<BR>" + txt_hotel.Text + "<BR>";
 
             lbl_message.Visible = true;
             lbl_message.Text = message;
