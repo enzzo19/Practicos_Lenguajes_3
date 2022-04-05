@@ -43,7 +43,7 @@ namespace TP3_Enzo_Juarez
             }
             if (error)
             {
-                errorProvider1.SetError(txt_name, "No se permiten numeros");
+                errorProvider1.SetError(txt_name, "NO se permiten numeros! Coloque su nombre");
             }
             else
             {
@@ -80,6 +80,54 @@ namespace TP3_Enzo_Juarez
         private void txt_edad_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_salario_Validating(object sender, CancelEventArgs e)
+        {
+            bool error = false;
+            foreach (char caracter in this.txt_salario.Text)
+            {
+                if (char.IsNumber(caracter) == false)
+                {
+                    error = true;
+                    break;
+                }
+
+            }
+            if (error)
+            {
+                errorProvider1.SetError(txt_salario, "Solo se permiten numeros");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bool error = false;
+           if (txt_name.Text == "")
+            {
+                
+                error = true;
+            }
+            if (error)
+            {
+                errorProvider1.SetError(txt_name, "Ingrese un nombre");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt_name.Text = "";
+            txt_edad.Text = "";
+            txt_salario.Text = "";
+            errorProvider1.Clear();
         }
     }
 }
