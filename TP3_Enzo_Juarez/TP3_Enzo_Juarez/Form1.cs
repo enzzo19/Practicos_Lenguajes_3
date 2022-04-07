@@ -20,14 +20,10 @@ namespace TP3_Enzo_Juarez
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
         
-        
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
@@ -79,9 +75,7 @@ namespace TP3_Enzo_Juarez
 
         private void txt_edad_TextChanged(object sender, EventArgs e)
         {
-
         }
-
         private void txt_salario_Validating(object sender, CancelEventArgs e)
         {
             bool error = false;
@@ -118,15 +112,21 @@ namespace TP3_Enzo_Juarez
             }
             else
             {
+                MessageBox.Show("Carga de Datos Exitosa");
+                txt_name.Clear();
+                txt_edad.Clear();
+                txt_salario.Clear();
+                txt_descrip.Clear();
                 errorProvider1.Clear();
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txt_name.Text = "";
-            txt_edad.Text = "";
-            txt_salario.Text = "";
+            txt_name.Clear();
+            txt_edad.Clear();
+            txt_salario.Clear();
+            txt_descrip.Clear();
             errorProvider1.Clear();
         }
     }

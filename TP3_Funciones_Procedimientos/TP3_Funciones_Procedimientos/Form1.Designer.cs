@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_num1 = new System.Windows.Forms.TextBox();
-            this.txt_num2 = new System.Windows.Forms.TextBox();
-            this.btn_suma = new System.Windows.Forms.Button();
-            this.btn_resta = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.btn_div = new System.Windows.Forms.Button();
             this.btn_multi = new System.Windows.Forms.Button();
-            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_resta = new System.Windows.Forms.Button();
+            this.btn_suma = new System.Windows.Forms.Button();
+            this.txt_num2 = new System.Windows.Forms.TextBox();
+            this.txt_num1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_resultado = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -64,69 +64,15 @@
             this.groupBox1.Text = "INGRESAR DATOS";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox2
+            // btn_clear
             // 
-            this.groupBox2.Controls.Add(this.txt_resultado);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(12, 184);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(408, 90);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "RESULTADO";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Numero 1:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Numero 2:";
-            // 
-            // txt_num1
-            // 
-            this.txt_num1.Location = new System.Drawing.Point(108, 32);
-            this.txt_num1.Name = "txt_num1";
-            this.txt_num1.Size = new System.Drawing.Size(100, 20);
-            this.txt_num1.TabIndex = 2;
-            // 
-            // txt_num2
-            // 
-            this.txt_num2.Location = new System.Drawing.Point(108, 69);
-            this.txt_num2.Name = "txt_num2";
-            this.txt_num2.Size = new System.Drawing.Size(100, 20);
-            this.txt_num2.TabIndex = 3;
-            // 
-            // btn_suma
-            // 
-            this.btn_suma.Location = new System.Drawing.Point(6, 114);
-            this.btn_suma.Name = "btn_suma";
-            this.btn_suma.Size = new System.Drawing.Size(75, 23);
-            this.btn_suma.TabIndex = 4;
-            this.btn_suma.Text = "SUMA";
-            this.btn_suma.UseVisualStyleBackColor = true;
-            this.btn_suma.Click += new System.EventHandler(this.btn_suma_Click);
-            // 
-            // btn_resta
-            // 
-            this.btn_resta.Location = new System.Drawing.Point(87, 114);
-            this.btn_resta.Name = "btn_resta";
-            this.btn_resta.Size = new System.Drawing.Size(75, 23);
-            this.btn_resta.TabIndex = 5;
-            this.btn_resta.Text = "RESTA";
-            this.btn_resta.UseVisualStyleBackColor = true;
-            this.btn_resta.Click += new System.EventHandler(this.btn_resta_Click);
+            this.btn_clear.Location = new System.Drawing.Point(330, 114);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(75, 23);
+            this.btn_clear.TabIndex = 8;
+            this.btn_clear.Text = "LIMPIAR";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_div
             // 
@@ -148,15 +94,69 @@
             this.btn_multi.UseVisualStyleBackColor = true;
             this.btn_multi.Click += new System.EventHandler(this.btn_multi_Click);
             // 
-            // btn_clear
+            // btn_resta
             // 
-            this.btn_clear.Location = new System.Drawing.Point(330, 114);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(75, 23);
-            this.btn_clear.TabIndex = 8;
-            this.btn_clear.Text = "LIMPIAR";
-            this.btn_clear.UseVisualStyleBackColor = true;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            this.btn_resta.Location = new System.Drawing.Point(87, 114);
+            this.btn_resta.Name = "btn_resta";
+            this.btn_resta.Size = new System.Drawing.Size(75, 23);
+            this.btn_resta.TabIndex = 5;
+            this.btn_resta.Text = "RESTA";
+            this.btn_resta.UseVisualStyleBackColor = true;
+            this.btn_resta.Click += new System.EventHandler(this.btn_resta_Click);
+            // 
+            // btn_suma
+            // 
+            this.btn_suma.Location = new System.Drawing.Point(6, 114);
+            this.btn_suma.Name = "btn_suma";
+            this.btn_suma.Size = new System.Drawing.Size(75, 23);
+            this.btn_suma.TabIndex = 4;
+            this.btn_suma.Text = "SUMA";
+            this.btn_suma.UseVisualStyleBackColor = true;
+            this.btn_suma.Click += new System.EventHandler(this.btn_suma_Click);
+            // 
+            // txt_num2
+            // 
+            this.txt_num2.Location = new System.Drawing.Point(108, 69);
+            this.txt_num2.Name = "txt_num2";
+            this.txt_num2.Size = new System.Drawing.Size(100, 20);
+            this.txt_num2.TabIndex = 3;
+            // 
+            // txt_num1
+            // 
+            this.txt_num1.Location = new System.Drawing.Point(108, 32);
+            this.txt_num1.Name = "txt_num1";
+            this.txt_num1.Size = new System.Drawing.Size(100, 20);
+            this.txt_num1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Numero 2:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Numero 1:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txt_resultado);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(12, 184);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(408, 90);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "RESULTADO";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txt_resultado
             // 
@@ -182,7 +182,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "PROCEDIMIENTOS Y FUNCIONES";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
