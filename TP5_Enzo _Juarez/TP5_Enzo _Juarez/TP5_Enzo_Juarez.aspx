@@ -5,6 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <script type="text/javascript">
+    
+        function alerta(numero) {
+            alert('Se ha presionado el boton: ' + numero);
+        }
+    
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,7 +27,7 @@
 &nbsp;&nbsp;&nbsp;
         <asp:RegularExpressionValidator 
             ID="RegularExpressionValidator1" 
-            ValidationExpression="^(?!.* (?: |$))[A-Z][a-z ]+$" 
+            ValidationExpression= "^[A-Za-z0-9\s]+$"
             runat="server" 
             ErrorMessage="Ingrese Escuela !" 
             ForeColor="Red" 
@@ -95,7 +102,6 @@
         </asp:RegularExpressionValidator>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="Enviar" />
+        <asp:Button ID="btn_enviar" runat="server" Text="Enviar" OnClick="Button1_Click" />
     </form>
-</body>
-</html>
+</body></html>
