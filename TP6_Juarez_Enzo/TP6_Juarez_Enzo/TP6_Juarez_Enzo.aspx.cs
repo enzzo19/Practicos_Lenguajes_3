@@ -39,17 +39,57 @@ public partial class TP6_Juarez_Enzo : System.Web.UI.Page
 
     protected void btn_ver_Click(object sender, EventArgs e)
     {
-        System.Text.StringBuilder sb = new System.Text.StringBuilder();
-        foreach (object item in listbox_left.)
+        String eleccion = "Your chose is: <br />";
+        foreach (ListItem item in listbox_left.Items)
         {
-            sb.Append(item.ToString());
-            sb.Append(" ");
+            if (item.Selected)
+            {
+                eleccion += item.Text + "<br />";
+            }
+         
         }
-        lbl_ver.Text = sb.ToString();
+        lbl_ver.Text = eleccion.ToString();
     }
 
     protected void btn_limpiar_Click(object sender, EventArgs e)
     {
         listbox_right.Items.Clear();
+    }
+
+    protected void btn_right_Click(object sender, EventArgs e)
+    {
+        String eleccion = "";
+        foreach (ListItem item in listbox_left.Items)
+        {
+            if (item.Selected)
+            {
+                eleccion = item.Text;
+                listbox_right.Items.Add(eleccion);
+            }
+        }
+    
+    }
+
+    protected void btn_left_Click(object sender, EventArgs e)
+    {
+        List<string> no_seleccionado = new List<string>();
+
+        foreach (ListItem item in listbox_right.Items)
+        {
+
+            if (!item.Selected)
+            {
+                no_seleccionado.Add(item.Text);
+            }
+        }
+        listbox_right.Items.Clear();
+
+        foreach (string item2 in no_seleccionado)
+        {
+            listbox_right.Items.Add(item2);
+        }
+
+        
+
     }
 }

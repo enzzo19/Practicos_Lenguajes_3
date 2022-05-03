@@ -45,11 +45,11 @@
                     </asp:ListBox>
                 </td>
                 <td class="auto-style4">&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btn_right" runat="server" Height="23px" Text="&gt;&gt;&gt;" Width="156px" />
+                    <asp:Button ID="btn_right" runat="server" Height="23px" Text="&gt;&gt;&gt;" Width="156px" OnClick="btn_right_Click" />
                     <br />
                     <br />
 &nbsp;&nbsp;
-                    <asp:Button ID="btn_left" runat="server" Text="&lt;&lt;&lt;" Width="155px" />
+                    <asp:Button ID="btn_left" runat="server" Text="&lt;&lt;&lt;" Width="155px" OnClick="btn_left_Click" />
                     <br />
                     <br />
 &nbsp;&nbsp;
