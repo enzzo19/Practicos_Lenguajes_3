@@ -45,42 +45,42 @@
                     </asp:ListBox>
                 </td>
                 <td class="auto-style4">&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button6" runat="server" Height="23px" Text="&gt;&gt;&gt;" Width="156px" />
+                    <asp:Button ID="btn_right" runat="server" Height="23px" Text="&gt;&gt;&gt;" Width="156px" />
                     <br />
                     <br />
 &nbsp;&nbsp;
-                    <asp:Button ID="Button7" runat="server" Text="&lt;&lt;&lt;" Width="155px" />
+                    <asp:Button ID="btn_left" runat="server" Text="&lt;&lt;&lt;" Width="155px" />
                     <br />
                     <br />
 &nbsp;&nbsp;
-                    <asp:Button ID="Button8" runat="server" Text="Nuevo Item" Width="153px" />
+                    <asp:Button ID="btn_nuevo" runat="server" OnClick="Button8_Click" Text="Nuevo Item" Width="153px" />
                     <br />
                     <br />
 &nbsp;&nbsp;
-                    <asp:Button ID="Button9" runat="server" Text="Limpiar Lista" Width="153px" />
+                    <asp:Button ID="btn_limpiar" runat="server" OnClick="btn_limpiar_Click" Text="Limpiar Lista" Width="153px" />
                     <br />
                 </td>
                 <td class="auto-style5">
-                    <asp:ListBox ID="ListBox2" runat="server" Height="151px" Width="162px"></asp:ListBox>
+                    <asp:ListBox ID="listbox_right" runat="server" Height="151px" SelectionMode="Multiple" Width="162px"></asp:ListBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="Nuevo Item" Visible="False"></asp:Label>
+                    <asp:Label ID="lbl_nuevo" runat="server" ForeColor="Red" Text="Nuevo Item" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="TextBox1" runat="server" Visible="False"></asp:TextBox>
+                    <asp:TextBox ID="txt_nuevo" runat="server" Visible="False"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="Button10" runat="server" Text="Insertar Item" Visible="False" />
+                    <asp:Button ID="btn_insertar" runat="server" OnClick="btn_insertar_Click" Text="Insertar Item" Visible="False" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">
-                    <asp:Button ID="Button5" runat="server" Height="23px" Text="Ver Seleccionado" Width="145px" />
+                    <asp:Button ID="btn_ver" runat="server" Height="23px" OnClick="btn_ver_Click" Text="Ver Seleccionado" Width="145px" />
                 </td>
                 <td class="auto-style2">
-                    <asp:Label ID="Label2" runat="server"></asp:Label>
+                    <asp:Label ID="lbl_ver" runat="server"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>
