@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Mails_Teoria", "Mails_Teoria\", "{6670CF04-3B6B-47C8-A054-9B67DB386447}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49831"
+		Debug.AspNetCompiler.PhysicalPath = "Mails_Teoria\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49831\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49831"
+		Release.AspNetCompiler.PhysicalPath = "Mails_Teoria\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49831\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49831"
+		SlnRelativePath = "Mails_Teoria\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6670CF04-3B6B-47C8-A054-9B67DB386447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6670CF04-3B6B-47C8-A054-9B67DB386447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1C24E60-7E88-495C-8458-4F35E2F85145}
+	EndGlobalSection
+EndGlobal
