@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TP7_EnviandoMails_ Juarez_Velazquez_Enzo_Jesus", "TP7_EnviandoMails_ Juarez_Velazquez_Enzo_Jesus\", "{D3509602-767D-48C8-9D48-CC745FCB6D42}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_65482"
+		Debug.AspNetCompiler.PhysicalPath = "TP7_EnviandoMails_ Juarez_Velazquez_Enzo_Jesus\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65482\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_65482"
+		Release.AspNetCompiler.PhysicalPath = "TP7_EnviandoMails_ Juarez_Velazquez_Enzo_Jesus\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65482\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "65482"
+		SlnRelativePath = "TP7_EnviandoMails_ Juarez_Velazquez_Enzo_Jesus\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3509602-767D-48C8-9D48-CC745FCB6D42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3509602-767D-48C8-9D48-CC745FCB6D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF574B49-0F36-443F-8047-E97547B8616C}
+	EndGlobalSection
+EndGlobal
