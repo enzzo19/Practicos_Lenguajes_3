@@ -88,8 +88,5 @@ public partial class TP6_Juarez_Enzo : System.Web.UI.Page
         {
             listbox_right.Items.Add(item2);
         }
-
-        
-
     }
 }
